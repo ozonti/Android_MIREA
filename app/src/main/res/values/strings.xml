@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MIREA</string>
+    <string name="input_str">Ввести значение</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="logout">Вывести отладку</string>
+    <string name="next_act">Перейти на вторую активность</string>
 </resources>
