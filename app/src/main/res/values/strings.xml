@@ -3,5 +3,7 @@
     <string name="input_str">Ввести значение</string>
     <string name="calculate">Рассчитать</string>
     <string name="logout">Вывести отладку</string>
-    <string name="next_act">Перейти на вторую активность</string>
+    <string name="next_act">Передача данных</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
