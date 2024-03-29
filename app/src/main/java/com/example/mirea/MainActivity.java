@@ -24,13 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().setReorderingAllowed(true)
-                    .add(R.id.first_fragment, FirstFragment.class, null)
-                    .add(R.id.first_fragment, SecondFragment.class, null)
-                    .add(R.id.first_fragment, ThirdFragment.class, null)
-                    //.add(R.id.first_fragment, FourthFragment.class, null)
-                    .commit();
-        }
+        getSupportFragmentManager().beginTransaction().add(R.id.first_fragment, new StartFragment()).commit();
     }
 }
