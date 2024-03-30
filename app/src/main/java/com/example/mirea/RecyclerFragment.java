@@ -26,7 +26,7 @@ public class RecyclerFragment extends Fragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         List<Item> listItems = new ArrayList<>();
-        for(int i = 0; i < 100; i ++){
+        for(int i = 0; i < 200; i ++){
             listItems.add(new Item(R.drawable.minus, String.valueOf(i+1)));
         }
         RecycleAdapter adapter = new RecycleAdapter(getContext(), listItems);
