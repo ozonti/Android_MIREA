@@ -16,14 +16,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public MainActivity(){
-        super(R.layout.activity_main);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        getSupportFragmentManager().beginTransaction().add(R.id.first_fragment, new StartFragment()).commit();
+        setContentView(R.layout.activity_main);
     }
 }
