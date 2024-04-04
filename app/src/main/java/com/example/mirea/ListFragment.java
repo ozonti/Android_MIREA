@@ -30,7 +30,7 @@ public class ListFragment extends Fragment {
 
         ListView listView = view.findViewById(R.id.listView);
         List<Item> listItems = new ArrayList<>();
-        for(int i = 0; i < 100; i ++){
+        for(int i = 0; i < 200; i ++){
             listItems.add(new Item(R.drawable.plus, String.valueOf(i+1)));
         }
         ListAdapter adapter = new ListAdapter(getContext(), R.layout.list_item, listItems);
