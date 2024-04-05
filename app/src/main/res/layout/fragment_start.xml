@@ -41,21 +41,28 @@ tools:context=".StartFragment">
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/textView">
 
+
         <Button
             android:id="@+id/toListFragment"
-            android:layout_width="match_parent"
-            android:layout_height="210dp"
+            android:layout_width="428dp"
+            android:layout_height="wrap_content"
             android:text="ListView"
-            android:textSize="@dimen/text_size"
-            app:layout_constraintStart_toStartOf="parent" />
-
+            android:textSize="@dimen/text_size" />
 
         <Button
             android:id="@+id/toRecyclerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="206dp"
+            android:layout_width="422dp"
+            android:layout_height="wrap_content"
             android:text="RecyclerView"
             android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/notification"
+            android:layout_width="434dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="notification"
             app:layout_constraintStart_toStartOf="parent" />
 
 
