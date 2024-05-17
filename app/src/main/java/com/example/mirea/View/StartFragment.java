@@ -1,16 +1,20 @@
-package com.example.mirea;
+package com.example.mirea.View;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LiveData;
 import androidx.navigation.Navigation;
-import android.content.Context;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.mirea.Data.Model.FragmentNavigateData;
 import com.example.mirea.R;
-import java.util.Objects;
 
 public class StartFragment extends Fragment {
+
+    public FragmentNavigateData dataLayer = new FragmentNavigateData();
 
     public StartFragment() {
         super(R.layout.fragment_start);
@@ -22,8 +26,8 @@ public class StartFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                String result = "Данные, переданные из StartFragment в ListFragment";
-                bundle.putString("listKey", result);
+
+                bundle.putString("listKey", dataLayer.getDatafromFirstToList());
                 Navigation.findNavController(v).navigate(R.id.from_start_to_list, bundle);
             }
         });
@@ -33,11 +37,13 @@ public class StartFragment extends Fragment {
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 String result = "Данные, переданные из StartFragment в RecyclerFragment";
-                bundle.putString("recyclerKey", result);
+                bundle.putString("recyclerKey", dataLayer.getDatafromFirstToRecycler());
                 Navigation.findNavController(v).navigate(R.id.from_start_to_recycler, bundle);
             }
         });
 
         return view;
     }
+
+
 }

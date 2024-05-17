@@ -1,4 +1,4 @@
-package com.example.mirea;
+package com.example.mirea.View.Adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -13,6 +13,9 @@ import androidx.annotation.Nullable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.mirea.Data.Model.Item;
+import com.example.mirea.R;
 
 import java.util.List;
 

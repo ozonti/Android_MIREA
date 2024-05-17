@@ -1,4 +1,4 @@
-package com.example.mirea;
+package com.example.mirea.Data.Model;
 
 public class Item {
 

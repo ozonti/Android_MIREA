@@ -1,10 +1,9 @@
-package com.example.mirea;
+package com.example.mirea.View;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,7 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.mirea.Data.Model.Item;
 import com.example.mirea.R;
+import com.example.mirea.View.Adapter.RecycleAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 
