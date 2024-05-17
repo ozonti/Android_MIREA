@@ -15,7 +15,7 @@ public class LocalDataSource implements DataSource{
     private List<Item> items = new ArrayList<>();
     LocalDataSource(){
         for (int i = 0; i < 200; i++) {
-            items.add(new Item(R.drawable.plus, "Компания" + (i + 1)));
+            items.add(new Item(R.drawable.plus, "Категория" + (i + 1)));
         }
     }
     public LiveData<List<Item>> getListItems(){

@@ -6,6 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".View.StartFragment">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="231dp"
@@ -13,6 +14,7 @@ tools:context=".View.StartFragment">
         android:layout_marginTop="110dp"
         app:layout_constraintBottom_toTopOf="@id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -23,28 +25,40 @@ tools:context=".View.StartFragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:text="@string/first_frag"
+        android:text="Какой-то текст"
         android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textCommon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="330dp" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="488dp"
-        android:layout_height="730dp"
-        android:layout_marginTop="112dp"
+        android:id="@+id/linearlayout"
+        android:layout_width="320dp"
+        android:layout_height="474dp"
+        android:layout_marginTop="372dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/toListFragment"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
+            android:layout_height="76dp"
             android:text="ListView"
             android:textSize="@dimen/text_size"
             app:layout_constraintStart_toStartOf="parent" />
@@ -53,8 +67,17 @@ tools:context=".View.StartFragment">
         <Button
             android:id="@+id/toRecyclerFragment"
             android:layout_width="match_parent"
-            android:layout_height="206dp"
+            android:layout_height="80dp"
             android:text="RecyclerView"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/CommonFilesDSButton"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:text="CommonFilesDSButton"
             android:textSize="@dimen/text_size"
             app:layout_constraintStart_toStartOf="parent" />
 
